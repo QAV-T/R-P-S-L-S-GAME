@@ -41,3 +41,19 @@ function computerTurn(){
             break;            
     }               
     }
+
+    function checkWinner() {
+        if (player === computer) {
+            return "Draw!";
+        } else if (computer === 'ROCK') {
+            return (player === 'PAPER' || player === 'SPOCK') ? 'You Win!' : 'You Lost';
+        } else if (computer === 'PAPER') {
+            return (player === 'SCISSOR' || player === 'LIZZARD') ? 'You Win!' : 'You Lost';
+        } else if (computer === 'SCISSOR') {
+            return (player === 'ROCK' || player === 'SPOCK') ? 'You Win!' : 'You Lost';
+        } else if (computer === 'SPOCK') {
+            return (player === 'PAPER' || player === 'LIZZARD') ? 'You Win!' : 'You Lost';
+        } else if (computer === 'LIZZARD') {
+            return (player === 'ROCK' || player === 'SCISSOR') ? 'You Win!' : 'You Lost';  
+        }
+    }
