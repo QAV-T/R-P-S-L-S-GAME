@@ -1,4 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#intro {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#introHeading {
+    margin: 10px;
+    padding: 10px
+}
+
 #gameDiv {
+    /* //https://www.youtube.com/watch?v=qWPtKtYEsN4 */
+    position: absolute;
+    top: 0%;
+    align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif ;
     font-size: 80%;
     margin: 20px;
