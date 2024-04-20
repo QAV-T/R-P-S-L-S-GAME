@@ -1,25 +1,24 @@
 /**
  * Rock Paper Scissors Lizard Spock Game
- * This script handles the game logic and user interactions.
  */
 
 // DOM elements
-let playerText = document.querySelector("#playerText");
-let computerText = document.querySelector("#computerText");
-let resultText = document.querySelector("#resultText");
-let choiceBtn = document.querySelectorAll(".choiceBtn");
-let scoreDisplay = document.querySelector("#score");
-let triesDisplay = document.querySelector("#triesLeft");
-let playAgainBtn = document.querySelector("#playAgainBtn");
+const playerText = document.querySelector("#playerText");
+const computerText = document.querySelector("#computerText");
+const resultText = document.querySelector("#resultText");
+const choiceBtn = document.querySelectorAll(".choiceBtn");
+const scoreDisplay = document.querySelector("#score");
+const triesDisplay = document.querySelector("#triesLeft");
+const playAgainBtn = document.querySelector("#playAgainBtn");
 
-// Game variables
+// game variables
 let player = null;
 let computer = null;
 let score = 0;
 let tries = 5
 
 /**
- * Handles the player's selection and updates the game state.
+ * handles the player's selection and updates the game state.
  * @param {Event} event - The click event object.
  */
 function onSelection(event) {
@@ -51,7 +50,7 @@ function resetGame() {
 }
 
 /**
- * Generates the computer's choice.
+ * computer's choice.
  */
 function computerTurn() {
     const randNum = Math.floor(Math.random() * 5) + 1;
@@ -75,8 +74,8 @@ function computerTurn() {
 }
 
 /**
- * Checks the winner of the game.
- * @returns {string} - The result of the game.
+ * checks the winner.
+ * @returns {string} - result of the game.
  */
 function checkWinner() {
     if (player === computer) {
@@ -95,7 +94,7 @@ function checkWinner() {
 }
 
 /**
- * Updates the score based on the game result.
+ * updates the score.
  */
 function updateScore() {
     if (resultText.textContent.includes('You Win!')) {
@@ -105,7 +104,7 @@ function updateScore() {
 }
 
 /**
- * Updates the number of tries left.
+ * updates the number of tries left.
  */
 function updateTries() {
     tries--;
@@ -113,7 +112,7 @@ function updateTries() {
 }
 
 /**
- * Resets the game state.
+ * resets the game.
  */
 function resetGame() {
     player = null;
@@ -128,12 +127,12 @@ function resetGame() {
 }
 
 /**
- * Initializes the game by adding event listeners to choice buttons and play again button.
+ * initializes the game by adding event listeners to choice buttons and play again button.
  */
 function initializeGame() {
     choiceBtn.forEach(button => button.addEventListener("click", onSelection));
     playAgainBtn.addEventListener("click", resetGame);
 }
 
-// Initialize the game when the DOM content is loaded
+// initialize the game when the DOM content is loaded
 document.addEventListener("DOMContentLoaded", initializeGame);
