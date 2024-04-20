@@ -7,13 +7,22 @@
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
+<body>
 
-    <div id="gameDiv">
+  <div>
+    <form id="username-form">
+      <label for="username">Enter your name:</label>
+      <input type="text" id="username">
+      <button type="submit" class="choiceBtn" id="letsPlay">Let's Play</button>
+    </form>
+  </div>
+
+    <div id="gameDiv" style="display: none;">
         <h1 class="gameText" id="playerText">Player:</h1>
         <h1 class="gameText" id="computerText">Computer:</h1>
         <h1 class="gameText" id="resultText">Result:</h1>
 
-       <div id="btn">
+       <div class="btn">
         <button class="choiceBtn">ROCK</button>
         <button class="choiceBtn">SCISSOR</button>
         <button class="choiceBtn">PAPER</button>
@@ -30,8 +39,7 @@
       <button class="choiceBtn" id="playAgainBtn">Play Again</button>
       </div>
 
-    </div> 
-    
+  </div> 
 
     <script src="./assets/script/index.js"></script>
 </body>
