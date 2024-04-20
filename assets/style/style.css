@@ -16,17 +16,18 @@
     text-align: left;
 }
 
+
 button {
     padding: 5px;
     border-radius: 10px;
     border: none;
 }
 
-#btn {
+.btn {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 30px;
+    margin: 30px;
 }
 
 .choiceBtn {
@@ -46,4 +47,8 @@ button {
 
 .choiceBtn:active {
     background-color: hsl(200, 60%, 80%);
+}
+
+#playAgainBtn {
+    align-items: center;
 }
