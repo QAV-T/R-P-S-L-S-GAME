@@ -33,16 +33,16 @@ The purpose of this project is to create an interactive web-based game that prov
 
 ## Features
 - **Username Input**: Users can enter their name before starting the game to personalize their gaming experience.
-![game-screenshot](readme-imgs/enter-name.png)
+ ![game-screenshot](readme-imgs/enter-name.png)
 - **Gameplay**: After entering their name, players can choose from Rock, Paper, Scissors, Lizard, or Spock.
-![game-screenshot](readme-imgs/choices.png)
+ ![game-screenshot](readme-imgs/choices.png)
 - **Display of Choices**: The game displays the choices made by the player and the computer, as well as the result of the game.
-![game-screenshot](readme-imgs/display-choices.png)
+ ![game-screenshot](readme-imgs/display-choices.png)
 - **Score Tracking**: Players can track their score during the game.
 - **Limited Tries**: The game ends after a limited number of tries, providing a challenging experience.
-![game-screenshot](readme-imgs/tries-and-score.png)
+ ![game-screenshot](readme-imgs/tries-and-score.png)
 - **Play Again**: Players can reset the game and start over with a new username and fresh score.
-![game-screenshot](readme-imgs/play-again.png)
+ ![game-screenshot](readme-imgs/play-again.png)
 
 ## Future Features
 - Multiplayer mode to play against other users online.
