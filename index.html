@@ -1,47 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors Lizard Spock</title>
-    <link rel="stylesheet" href="./assets/style/style.css">
-</head>
-<body>
-<body>
-
-  <div id="intro">
-    <form id="username-form">
-      <h1 id="introHeading">Rock Paper Scissors Lizard Spock</h1>
-      <label for="username">Enter your name:</label>
-      <input type="text" id="username"> <br>
-      <button type="submit" class="choiceBtn" id="letsPlay">Let's Play</button>
-    </form>
-  </div>
-
-    <div id="gameDiv" style="display:none;">
-        <h1 class="gameText" id="playerText">Player:</h1>
-        <h1 class="gameText" id="computerText">Computer:</h1>
-        <h1 class="gameText" id="resultText">Result:</h1>
-
-       <div class="btn">
-        <button class="choiceBtn">ROCK</button>
-        <button class="choiceBtn">SCISSOR</button>
-        <button class="choiceBtn">PAPER</button>
-        <button class="choiceBtn">SPOCK</button>
-        <button class="choiceBtn">LIZARD</button>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rock Paper Scissors Lizard Spock</title>
+      <link rel="stylesheet" href="./assets/style/style.css">
+   </head>
+   <body>
+      <div id="intro">
+         <form id="username-form">
+            <h1 id="introHeading">Rock Paper Scissors Lizard Spock</h1>
+            <label for="username">Enter your name:</label>
+            <input type="text" id="username"> <br>
+            <button type="submit" class="choiceBtn" id="letsPlay">Let's Play</button>
+         </form>
       </div>
-
-      <div>
-        <h1 class="gameText" id="triesLeft">Tries left: 5</h1>
-        <h1 class="gameText" id="score">Your Score: 0</h1>
+      <div id="gameDiv" style="display:none;">
+         <h1 class="gameText" id="playerText">Player:</h1>
+         <h1 class="gameText" id="computerText">Computer:</h1>
+         <h1 class="gameText" id="resultText">Result:</h1>
+         <div class="btn">
+            <button class="choiceBtn">ROCK</button>
+            <button class="choiceBtn">SCISSOR</button>
+            <button class="choiceBtn">PAPER</button>
+            <button class="choiceBtn">SPOCK</button>
+            <button class="choiceBtn">LIZARD</button>
+         </div>
+         <div>
+            <h1 class="gameText" id="triesLeft">Tries left: 5</h1>
+            <h1 class="gameText" id="score">Your Score: 0</h1>
+         </div>
+         <div class="btn">
+            <button class="choiceBtn" id="playAgainBtn">Play Again</button>
+         </div>
       </div>
-      
-      <div class="btn">
-      <button class="choiceBtn" id="playAgainBtn">Play Again</button>
-      </div>
-
-  </div> 
-
-    <script src="./assets/script/index.js"></script>
-</body>
+      <script src="./assets/script/index.js"></script>
+   </body>
 </html>
