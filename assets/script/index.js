@@ -21,7 +21,7 @@ let score = 0;
 let tries = 5;
 let username = "Player";
 
-
+usernameInput.maxLength = 9;
 usernameForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -36,19 +36,19 @@ usernameForm.addEventListener("submit", (event) => {
     }
 });
 
-
 /**
  * Handles the player's selection and updates the game state.
  * @param {Event} event - The click event object.
  */
 function onSelection(event) {
     if (tries === 0) {
+        alert(`${username}, You have no tries left. Please reset the game`);
         return;
     }
 
     player = event.target.textContent;
     computerTurn();
-    playerText.textContent = `${username}: ${player}`; // Update to use username
+    playerText.textContent = `${username}: ${player}`;
     computerText.textContent = `Computer: ${computer}`;
     resultText.textContent = checkWinner();
     updateScore();
@@ -121,15 +121,18 @@ function updateTries() {
  * resets the game state.
  */
 function resetGame() {
+    let confirmation = confirm('Do you want to reset the Game ?');
+    if (confirmation) {
     player = null;
     computer = null;
     score = 0;
     tries = 5;
-    playerText.textContent = `${username}:`; // Reset to default username
+    playerText.textContent = `${username}:`;
     computerText.textContent = "Computer:";
     resultText.textContent = "Result:";
     scoreDisplay.textContent = "Score: 0";
     triesDisplay.textContent = "Tries left: 5";
+    }
 }
 
 /**

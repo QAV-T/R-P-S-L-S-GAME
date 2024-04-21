@@ -65,7 +65,7 @@ button {
 	margin: 30px;
 }
 
-.choiceBtn {
+.choiceBtn , .functionBtn {
 	background-color: hsl(200, 60%, 50%);
 	color: hsl(0, 0%, 90%);
 	margin: 5px;
@@ -76,11 +76,10 @@ button {
 	letter-spacing: 1px;
 }
 
-.choiceBtn:hover {
+.choiceBtn:hover , .functionBtn:hover {
 	background-color: hsl(200, 60%, 65%);
 }
-
-.choiceBtn:active {
+.choiceBtn:active , .functionBtn:active {
 	background-color: hsl(200, 60%, 80%);
 }
 
