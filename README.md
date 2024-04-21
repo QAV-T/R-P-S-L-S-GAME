@@ -19,6 +19,7 @@ Link to the [Game](https://qav-t.github.io/R-P-S-L-S-GAME/)
     - [Code Validation](#code-validation)
     - [Accessibility](#accessibility)
     - [Manual Testing](#manual-testing)
+    - [Fixed Bugs](#fixed-bugs)
     - [Supported Screens and Browsers](#supported-screens-and-browsers)
 7. [Deployment](#deployment)
     - [Via GitHub Pages](#via-github-pages)
@@ -111,6 +112,12 @@ This project uses the following technologies:
     - I verify that the game resets, and I can start a new game with a fresh score.
         ![game-screenshot](readme-imgs/reset-game.png)
 
+### Fixed Bugs
+I have assigned all buttons to the same class in order to apply the same style, while testing I found: 
+- "play again" button will act as a choice buttons when tries are over.
+  
+"let's play" button will trigger the tries are over alert if pressed more than 5 times. I fixed this bug by:
+-  Assign these two buttons to a new class and added to the style code to share same values with the other buttons.
 
 ### Supported Screens and Browsers
 - Desktop: Chrome, Firefox, Safari, Edge
