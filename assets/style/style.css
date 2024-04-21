@@ -11,6 +11,7 @@
 	align-items: center;
 	justify-content: space-around;
 	text-align: center;
+    margin-top: 30px;
 }
 
 #intro button {
@@ -22,6 +23,10 @@
 	padding: 10px
 }
 
+.img {
+    width: 90%;
+}
+
 #gameDiv {
 	/* //https://www.youtube.com/watch?v=qWPtKtYEsN4 */
 	position: absolute;
@@ -30,7 +35,7 @@
 	transform: translate(-50%, -0%);
 	font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 	font-size: 80%;
-	margin: 20px;
+	margin: 20px 0px;
 	padding: 20px;
 	border: none;
 	border-radius: 20px;
