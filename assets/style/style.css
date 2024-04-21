@@ -29,11 +29,10 @@ body {
 }
 
 .img {
-    width: 90%;
+    width: 98%;
 }
 
 #gameDiv {
-	/* //https://www.youtube.com/watch?v=qWPtKtYEsN4 */
 	position: absolute;
 	top: 0%;
 	left: 50%;
