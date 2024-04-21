@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+body {
+    background-color: hsl(209, 40%, 30%);
+    color: hsl(0, 0%, 90%);
+}
+
 #intro {
 	height: 50vh;
 	display: flex;
@@ -34,19 +39,19 @@
 	left: 50%;
 	transform: translate(-50%, -0%);
 	font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-	font-size: 80%;
+	font-size: 75%;
 	margin: 20px 0px;
 	padding: 20px;
 	border: none;
 	border-radius: 20px;
-	background-color: hsla(0, 0%, 60%, 0.4);
+	background-color: hsla(333, 50%, 50%, 0.4);
 }
 
 #gameDiv h1 {
 	padding-right: 20px;
+    margin: 5px;
 	text-align: left;
 }
-
 
 button {
 	padding: 5px;
@@ -63,7 +68,7 @@ button {
 
 .choiceBtn {
 	background-color: hsl(200, 60%, 50%);
-	color: hsl(325, 44%, 50%);
+	color: hsl(0, 0%, 90%);
 	margin: 5px;
 	padding: 10px 20px;
 	font-family: monospace;
