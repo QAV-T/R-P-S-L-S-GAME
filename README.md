@@ -4,6 +4,8 @@ Javascript Learning Project
 ## Overview
 This project is a web-based implementation of the Rock Paper Scissors Lizard Spock game. The game allows users to play against the computer by selecting one of the available options: Rock, Paper, Scissors, Lizard, or Spock. It aims to provide entertainment and challenge to users with its interactive gameplay and scoring system.
 
+Link to the [Game](https://qav-t.github.io/R-P-S-L-S-GAME/)
+
 ![Responsive Mock-up](readme-imgs/respons-cover.png)
 
 ## Index
