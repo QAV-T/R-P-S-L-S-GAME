@@ -121,8 +121,9 @@ function updateTries() {
  * resets the game state.
  */
 function resetGame() {
+    if (tries !== 0) {
     let confirmation = confirm('Do you want to reset the Game ?');
-    if (confirmation) {
+    if (confirmation){
     player = null;
     computer = null;
     score = 0;
@@ -132,7 +133,19 @@ function resetGame() {
     resultText.textContent = "Result:";
     scoreDisplay.textContent = "Score: 0";
     triesDisplay.textContent = "Tries left: 5";
-    }
+    }}
+
+    if (tries === 0) {
+        player = null;
+        computer = null;
+        score = 0;
+        tries = 5;
+        playerText.textContent = `${username}:`;
+        computerText.textContent = "Computer:";
+        resultText.textContent = "Result:";
+        scoreDisplay.textContent = "Score: 0";
+        triesDisplay.textContent = "Tries left: 5";
+    } 
 }
 
 /**
