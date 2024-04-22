@@ -5,7 +5,7 @@ Javascript Learning Project
 ## Overview
 This project is a web-based implementation of the Rock Paper Scissors Lizard Spock game. The game allows users to play against the computer by selecting one of the available options: Rock, Paper, Scissors, Lizard, or Spock. It aims to provide entertainment and challenge to users with its interactive gameplay and scoring system.
 
-Link to the [Game](https://qav-t.github.io/R-P-S-L-S-GAME/)
+Link to the [Game](https://qav-t.github.io/Rock-Paper-Scissors-Lizard-Spock/)
 
 ![Responsive Mock-up](readme-imgs/respons-cover.png)
 
@@ -89,6 +89,8 @@ This project uses the following technologies:
     - I click on one of the buttons (Rock, Paper, Scissors, Lizard, Spock).
     ![game-screenshot](readme-imgs/choices.png)
     - I verify that my choice is displayed on the screen.
+    - I verify that an alert will pop out when the player try to keep playeing after tries limit.
+        ![game-screenshot](readme-imgs/outOfTries.png)
 
 3. **Viewing Game Result**
     - After making my choice, I wait for the computer's choice to be displayed.
