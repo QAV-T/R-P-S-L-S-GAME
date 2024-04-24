@@ -133,10 +133,10 @@ This site was deployed via GitHub pages using the following steps:
 - From the source section drop-down menu change Branch from **none** to **main** and click the **Save**
 - After several minutes the website is live and will be automatically refreshed with each Git push command.
 
-The link to the live site is: https://qav-t.github.io/R-P-S-L-S-GAME/
+The link to the live site is: https://qav-t.github.io/Rock-Paper-Scissors-Lizard-Spock/
 
 To run locally:
-- Log into GitHub and click on repository to download ([R-P-S-L-S-GAME](https://github.com/QAV-T/R-P-S-L-S-GAME))
+- Log into GitHub and click on repository to download ([Rock Paper Scissors Lizard Spock Gmae](https://qav-t.github.io/Rock-Paper-Scissors-Lizard-Spock/))
 - Select **Code** and click "Download the Zip file.
 - Once download is completed, extract ZIP file and use in your local environment.
 
